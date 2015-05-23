@@ -12,4 +12,4 @@ var data = """+ response.text +"""
 
 document.getElementById("placeholder").innerHTML = template(data);
 	""")
-fo.close
+fo.close()
