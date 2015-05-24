@@ -45,7 +45,7 @@
         <div>
             <font size="8px" style="text-transform:uppercase;"><b>{{name.givenName}}</b><span style="font-weight:300"> {{name.familyName}}</span></font>
         </div>
-        <p style="font-weight:400">{{aboutMe}}</p>
+        <p style="font-weight:400">{{{aboutMe}}}</p>
 
       </div>
 
@@ -101,7 +101,7 @@
         {{/ifvalue}}
 {{/accounts}}
         {{#if emails.0.value}}
-        <li><a href="mailto:{{emails.0.value}}"><i class="fa fa-envelope-o"></i></a></li>
+        <li><a href="{{emails.0.value}}"><i class="fa fa-envelope-o"></i></a></li>
         {{/if}}
       </ul>
  </div>
@@ -112,7 +112,7 @@
         {{/entry}}
     </script>
           
-    
+    <script src="assets/js/main.js"></script>
 </div>
 
       <div class="container">
@@ -155,7 +155,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>

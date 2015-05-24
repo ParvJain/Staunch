@@ -4868,6 +4868,14 @@ a.badge:focus {
   font-size: 23px;
   font-weight: 200;
 }
+.jumbotron a {
+  color: white;
+  text-decoration: underline;
+}
+.jumbotron a:hover, a:focus {
+    color: #2C3E50;
+    text-decoration: underline;
+}
 .jumbotron > hr {
   border-top-color: #cfd9db;
 }
