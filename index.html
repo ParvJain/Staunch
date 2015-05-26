@@ -62,6 +62,9 @@
     </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
  <ul class="nav navbar-nav pull-right">
+ {{#urls}}
+ <li><a href="{{value}}">{{title}}</a></li>
+ {{/urls}}
  {{#accounts}}
         {{#ifvalue shortname equals="blogger"}}
         <li><a href="{{url}}"><i class="fa fa-google-plus-square"></i></a></li>
